@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Insurance Cost Predictor</title>
+</head>
+<style>
+    #cost_prediction{
+            display: grid;
+            gap: 10px;
+            padding-top: 30px;
+
+        }
+        #cost_prediction input{
+            padding: 10px;
+            width: 50%;
+            border-radius: 10px;
+
+        }
+        .h1{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        background-color:aqua;
+        position: sticky;
+        top:0;
+
+        }
+       .field-set{
+       width:50%;
+       margin: 0 auto;
+       border: 2px solid blue
+       background-color:#ADD8E6;
+       font-weight: bolder;
+
+       }
+       # form{
+       height:400px;
+       width:500px;
+       background-color:black;
+       background:red;
+       }
+
+
+
+
+</style>
+
+
+
+<body>
+<!--input_data=(age,sex,bmi,children,smoker,region-->
+<h1 class="h1">Insurance Cost Prediction System</h1>
+<fieldset class="field-set">
+    <div id="form">
+<form id="cost_prediction" method="post"action="/">
+
+    <label>Age:</label>
+    <input min="10" max="90" type="number" name="age">
+
+    <label>Sex:</label>
+    <label>
+        Enter 0 for male<br>
+        Enter 1 for female
+    </label>
+    <input min="0" max="1" type="number"  name="sex">
+
+    <label>BMI</label>
+    <input type="text" name="bmi" >
+
+    <label>Number of Children</label>
+    <input type="number" name="children">
+
+    <label>
+        Are you a smoker?<br>
+        Enter 1 if you are Smoker<br>
+        Enter 0 if you are not Smoker
+    </label>
+    <input min="0" max="1" type="number"  name="smoker">
+
+     <label>
+        Which region u live?<br>
+        Enter 0 if you are from southeast <br>
+         Enter 1 if you are from southwest <br>
+         Enter 2 if you are from northwest <br>
+         Enter 3 if you are from northeast
+     </label>
+
+    <input min="0" max="4" type="number"  name="region"><br>
+
+    <input type="submit" value="Predict">
+    </div>
+    </fieldset>
+
+
+</form>
+
+</body>
+</html>
